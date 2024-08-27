@@ -1,0 +1,93 @@
+/* Basic Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Space between sections */
+.scroll-section {
+    height: 65vh;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    margin-bottom: 80px; /* Equal space between sections */
+    position: relative;
+    text-align: center;
+}
+
+/* Gap between headings and content */
+.scroll-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px; /* Gap between headings and content */
+}
+
+/* Horizontal image layout with reduced image height */
+.image-horizontal {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+}
+
+.image-horizontal img {
+    max-width: 30%;
+    height: 80vh; /* Image height reduced to 60% of viewport height */
+    object-fit: cover;
+    border: 3px solid #fff;
+    transition: transform 0.3s ease-in-out;
+}
+video{
+    
+        max-width: 30%;
+        height: 80vh; /* Image height reduced to 60% of viewport height */
+        object-fit: cover;
+        border: 3px solid #fff;
+        transition: transform 0.3s ease-in-out;
+    
+}
+
+.image-horizontal img:hover {
+    transform: scale(1.1);
+}
+#social{
+    margin-bottom: 3.5cm;
+}
+footer {
+    text-align: center;
+    padding: 85px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
